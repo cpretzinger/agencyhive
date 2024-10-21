@@ -1,13 +1,13 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { BrainCircuit } from 'lucide-react';
+import { Brain } from 'lucide-react';
 
 const Header = () => {
   return (
     <header className="bg-hive-blue-100 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <BrainCircuit className="h-8 w-8 text-hive-yellow-500" />
+          <Brain className="h-8 w-8 text-hive-yellow-500" />
           <span className="text-xl font-bold text-hive-blue-900">AI HIVE</span>
         </div>
         <nav>
