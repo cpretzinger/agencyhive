@@ -7,32 +7,44 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <svg
-            className="h-10 w-10"
-            viewBox="0 0 24 24"
+            className="h-12 w-12"
+            viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M12 2L3 7V17L12 22L21 17V7L12 2Z"
+              d="M24 4L7 14V34L24 44L41 34V14L24 4Z"
               stroke="#FFD333"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
-              d="M12 7C13.6569 7 15 5.65685 15 4C15 2.34315 13.6569 1 12 1C10.3431 1 9 2.34315 9 4C9 5.65685 10.3431 7 12 7Z"
-              fill="#FFD333"
+              d="M24 4L7 14L24 24L41 14L24 4Z"
+              stroke="#FFD333"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
-              d="M12 22C13.6569 22 15 20.6569 15 19C15 17.3431 13.6569 16 12 16C10.3431 16 9 17.3431 9 19C9 20.6569 10.3431 22 12 22Z"
-              fill="#FFD333"
+              d="M24 44V24"
+              stroke="#FFD333"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
-              d="M19 14.5C20.6569 14.5 22 13.1569 22 11.5C22 9.84315 20.6569 8.5 19 8.5C17.3431 8.5 16 9.84315 16 11.5C16 13.1569 17.3431 14.5 19 14.5Z"
-              fill="#FFD333"
+              d="M15 19V29M33 19V29"
+              stroke="#FFD333"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
+            <circle cx="24" cy="14" r="3" fill="#FFD333" />
+            <circle cx="15" cy="24" r="3" fill="#FFD333" />
+            <circle cx="33" cy="24" r="3" fill="#FFD333" />
             <path
-              d="M5 14.5C6.65685 14.5 8 13.1569 8 11.5C8 9.84315 6.65685 8.5 5 8.5C3.34315 8.5 2 9.84315 2 11.5C2 13.1569 3.34315 14.5 5 14.5Z"
+              d="M20 32C20 30.8954 20.8954 30 22 30H26C27.1046 30 28 30.8954 28 32V36C28 37.1046 27.1046 38 26 38H22C20.8954 38 20 37.1046 20 36V32Z"
               fill="#FFD333"
             />
           </svg>
