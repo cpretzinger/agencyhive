@@ -1,11 +1,13 @@
 import React from 'react';
-import { Zap, Briefcase, Users, TrendingUp } from 'lucide-react';
+import { Zap, Globe, Phone, Robot } from 'lucide-react';
+import Counter from './Counter';
 
-const FeatureCard = ({ icon, title, description }) => (
+const FeatureCard = ({ icon, title, description, counter }) => (
   <div className="bg-white p-6 rounded-lg shadow-md border border-hive-blue-100 hover:border-hive-blue-300 transition-colors">
     <div className="text-hive-blue-500 mb-4">{icon}</div>
     <h3 className="text-xl font-semibold mb-2 text-hive-blue-900">{title}</h3>
     <p className="text-hive-blue-700">{description}</p>
+    {counter && <Counter />}
   </div>
 );
 
@@ -17,19 +19,20 @@ const Features = () => {
       description: "Automate repetitive tasks and focus on what matters most."
     },
     {
-      icon: <Briefcase size={32} />,
-      title: "Project Management",
-      description: "Streamline your workflow with intelligent project tracking."
+      icon: <Robot size={32} />,
+      title: "AI Toolkits",
+      description: "Make the time vampires disappear. Over hours saved this year already:",
+      counter: true
     },
     {
-      icon: <Users size={32} />,
-      title: "Team Collaboration",
-      description: "Foster seamless communication and collaboration within your team."
+      icon: <Globe size={32} />,
+      title: "Website Design, Deployment, and SEO Presence",
+      description: "Boost your online visibility with expert web design and SEO strategies."
     },
     {
-      icon: <TrendingUp size={32} />,
-      title: "Performance Analytics",
-      description: "Gain valuable insights with AI-driven performance metrics."
+      icon: <Phone size={32} />,
+      title: "CRM/AI Call Routing",
+      description: "Use your lead analytics to predict in real-time your next best outbound call."
     }
   ];
 
