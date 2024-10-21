@@ -8,7 +8,7 @@ const Hero = () => {
         <img
           src="/hero-image.jpg"
           alt="AI robot examining a honeycomb"
-          className="w-full h-full object-cover mx-auto"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
