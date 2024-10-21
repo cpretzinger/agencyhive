@@ -7,8 +7,8 @@ const Header = () => {
     <header className="bg-hive-blue-100 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <BrainCircuit className="h-8 w-8 text-hive-blue-500" />
-          <span className="text-xl font-bold text-hive-blue-900">Agency Hive AI</span>
+          <BrainCircuit className="h-8 w-8 text-hive-yellow-500" />
+          <span className="text-xl font-bold text-hive-blue-900">AI HIVE</span>
         </div>
         <nav>
           <ul className="flex space-x-6">
