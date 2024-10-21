@@ -6,8 +6,8 @@ const Hero = () => {
     <section className="relative py-20 text-center">
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-image.jpg"
-          alt="AI robot examining a honeycomb"
+          src="/placeholder.svg"
+          alt="Agency Hive AI hero image"
           className="w-full h-full object-cover mx-auto"
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
