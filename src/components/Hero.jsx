@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="py-20 text-center">
+    <section className="py-20 text-center bg-gradient-to-b from-hive-blue-100 to-white">
       <div className="container mx-auto px-4">
-        <h1 className="text-5xl font-bold mb-6 text-gray-800">Revolutionize Your Agency with AI</h1>
-        <p className="text-xl mb-8 text-gray-600 max-w-2xl mx-auto">
+        <h1 className="text-5xl font-bold mb-6 text-hive-blue-900">Revolutionize Your Agency with AI</h1>
+        <p className="text-xl mb-8 text-hive-blue-700 max-w-2xl mx-auto">
           Harness the power of artificial intelligence to streamline your agency's workflow, boost productivity, and deliver exceptional results.
         </p>
-        <Button size="lg" className="text-lg px-8 py-4">Start Your Free Trial</Button>
+        <Button size="lg" className="text-lg px-8 py-4 bg-hive-yellow-500 text-hive-blue-900 hover:bg-hive-yellow-400">Start Your Free Trial</Button>
       </div>
     </section>
   );

@@ -2,16 +2,16 @@ import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const TestimonialCard = ({ quote, author, role, avatar }) => (
-  <div className="bg-white p-6 rounded-lg shadow-md">
-    <p className="text-gray-600 mb-4">"{quote}"</p>
+  <div className="bg-white p-6 rounded-lg shadow-md border border-hive-blue-100">
+    <p className="text-hive-blue-700 mb-4">"{quote}"</p>
     <div className="flex items-center">
       <Avatar className="h-12 w-12 mr-4">
         <AvatarImage src={avatar} alt={author} />
         <AvatarFallback>{author.split(' ').map(n => n[0]).join('')}</AvatarFallback>
       </Avatar>
       <div>
-        <h4 className="font-semibold">{author}</h4>
-        <p className="text-sm text-gray-500">{role}</p>
+        <h4 className="font-semibold text-hive-blue-900">{author}</h4>
+        <p className="text-sm text-hive-blue-500">{role}</p>
       </div>
     </div>
   </div>
@@ -40,9 +40,9 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20">
+    <section id="testimonials" className="py-20 bg-hive-yellow-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">What Our Clients Say</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-hive-blue-900">What Our Clients Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} {...testimonial} />

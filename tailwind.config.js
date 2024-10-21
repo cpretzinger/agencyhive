@@ -51,6 +51,21 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Agency Hive custom colors
+        'hive-blue': {
+          100: '#E6F3FF',
+          300: '#99D1FF',
+          500: '#3399FF',
+          700: '#0066CC',
+          900: '#003366',
+        },
+        'hive-yellow': {
+          100: '#FFF9E6',
+          300: '#FFE699',
+          500: '#FFD333',
+          700: '#CC9900',
+          900: '#664D00',
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
