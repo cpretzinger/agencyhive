@@ -12,6 +12,7 @@ const Header = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
+            {/* Hexagonal structure (beehive) */}
             <path
               d="M24 4L7 14V34L24 44L41 34V14L24 4Z"
               stroke="#FFD333"
@@ -19,33 +20,32 @@ const Header = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
             />
+            {/* Robot face */}
+            <rect x="16" y="18" width="16" height="12" rx="2" fill="#FFD333" />
+            <circle cx="20" cy="22" r="2" fill="#3399FF" />
+            <circle cx="28" cy="22" r="2" fill="#3399FF" />
+            <path d="M19 28H29" stroke="#3399FF" strokeWidth="2" strokeLinecap="round" />
+            {/* Quantum entanglement representation */}
             <path
-              d="M24 4L7 14L24 24L41 14L24 4Z"
+              d="M12 14C12 14 17 19 24 19C31 19 36 14 36 14"
               stroke="#FFD333"
               strokeWidth="2"
               strokeLinecap="round"
-              strokeLinejoin="round"
+              strokeDasharray="2 2"
             />
             <path
-              d="M24 44V24"
+              d="M12 34C12 34 17 29 24 29C31 29 36 34 36 34"
               stroke="#FFD333"
               strokeWidth="2"
               strokeLinecap="round"
-              strokeLinejoin="round"
+              strokeDasharray="2 2"
             />
+            {/* Circuit-like patterns (robotics) */}
             <path
-              d="M15 19V29M33 19V29"
+              d="M7 24H13M35 24H41"
               stroke="#FFD333"
               strokeWidth="2"
               strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <circle cx="24" cy="14" r="3" fill="#FFD333" />
-            <circle cx="15" cy="24" r="3" fill="#FFD333" />
-            <circle cx="33" cy="24" r="3" fill="#FFD333" />
-            <path
-              d="M20 32C20 30.8954 20.8954 30 22 30H26C27.1046 30 28 30.8954 28 32V36C28 37.1046 27.1046 38 26 38H22C20.8954 38 20 37.1046 20 36V32Z"
-              fill="#FFD333"
             />
           </svg>
           <span className="text-xl font-bold text-hive-blue-900">AI HIVE</span>
