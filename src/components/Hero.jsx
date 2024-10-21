@@ -6,13 +6,9 @@ const Hero = () => {
     <section className="relative py-20 text-center">
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-image.jpg"
+          src="/hero-image.jpeg"
           alt="Agency Hive AI hero image"
           className="w-full h-full object-cover mx-auto"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = "/placeholder.svg";
-          }}
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
