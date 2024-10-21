@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Globe, Phone, Robot } from 'lucide-react';
+import { Zap, Globe, Phone, Cpu } from 'lucide-react';
 import Counter from './Counter';
 
 const FeatureCard = ({ icon, title, description, counter }) => (
@@ -19,7 +19,7 @@ const Features = () => {
       description: "Automate repetitive tasks and focus on what matters most."
     },
     {
-      icon: <Robot size={32} />,
+      icon: <Cpu size={32} />,
       title: "AI Toolkits",
       description: "Make the time vampires disappear. Over hours saved this year already:",
       counter: true
