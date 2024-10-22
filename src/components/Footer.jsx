@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t border-hive-blue-700 pt-8 text-center text-hive-blue-100">
-          <p>&copy; 2023 Agency Hive AI. All rights reserved.</p>
+          <p>&copy; 2024 Agency Hive AI. All rights reserved.</p>
         </div>
       </div>
     </footer>
