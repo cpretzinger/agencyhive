@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const TestimonialCard = ({ quote, author, role, avatar }) => (
@@ -38,6 +38,18 @@ const Testimonials = () => {
       avatar: "/placeholder.svg"
     }
   ];
+
+  useEffect(() => {
+    // Ensure the form embed script is loaded
+    const script = document.createElement('script');
+    script.src = 'https://link.agencybrain.ai/js/form_embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <section id="testimonials" className="py-20 bg-hive-yellow-100">
