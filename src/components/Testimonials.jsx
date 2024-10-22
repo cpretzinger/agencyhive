@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const TestimonialCard = ({ quote, author, role, avatar }) => (
@@ -39,47 +39,14 @@ const Testimonials = () => {
     }
   ];
 
-  useEffect(() => {
-    // Ensure the form embed script is loaded
-    const script = document.createElement('script');
-    script.src = 'https://link.agencybrain.ai/js/form_embed.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <section id="testimonials" className="py-20 bg-hive-yellow-100">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-hive-blue-900">What Our Clients Say</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} {...testimonial} />
           ))}
-        </div>
-        
-        {/* Form Embed */}
-        <div className="max-w-3xl mx-auto mb-16">
-          <iframe
-            src="https://link.agencybrain.ai/widget/form/0G5xiEKRqityRl0uZmsX"
-            style={{width:'100%', height:'764px', border:'none', borderRadius:'4px'}}
-            id="inline-0G5xiEKRqityRl0uZmsX" 
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="Waitlist"
-            data-height="764"
-            data-layout-iframe-id="inline-0G5xiEKRqityRl0uZmsX"
-            data-form-id="0G5xiEKRqityRl0uZmsX"
-            title="Waitlist"
-          ></iframe>
         </div>
       </div>
     </section>
