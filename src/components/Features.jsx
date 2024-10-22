@@ -39,9 +39,11 @@ const Features = () => {
   return (
     <section id="features" className="py-20 bg-hive-blue-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-hive-yellow-500 drop-shadow-lg border border-hive-yellow-500 inline-block px-4 py-2 rounded">
-          Powerful Features 10x Your Freedom
-        </h2>
+        <div className="flex justify-center mb-12">
+          <h2 className="text-3xl font-bold text-center text-hive-yellow-500 drop-shadow-lg border border-hive-yellow-500 inline-block px-4 py-0.7 rounded">
+            Powerful Features 10x Your Freedom
+          </h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
