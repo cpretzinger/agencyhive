@@ -14,6 +14,10 @@ const fromSupabase = async (query) => {
 |------------|--------------------------|--------|----------|
 | id         | int8                     | number | true     |
 | created_at | timestamp with time zone | string | true     |
+| first_name | text                     | string | false    |
+| last_name  | text                     | string | false    |
+| email      | text                     | string | false    |
+| phone      | text                     | string | false    |
 
 Note: 
 - id is a Primary Key.
@@ -33,7 +37,12 @@ export const useAgencyHiveAis = () => useQuery({
 export const useAddAgencyHiveAi = () => {
     const queryClient = useQueryClient();
     return useMutation({
-        mutationFn: () => fromSupabase(supabase.from('AgencyHiveAi').insert([{}])),
+        mutationFn: (newUser) => fromSupabase(supabase.from('AgencyHiveAi').insert([{
+            first_name: newUser.first_name,
+            last_name: newUser.last_name,
+            email: newUser.email,
+            phone: newUser.phone
+        }])),
         onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: ['agencyHiveAis'] });
         },
