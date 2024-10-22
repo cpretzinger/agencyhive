@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="py-20 text-center bg-gradient-to-b from-hive-blue-100 to-white">
       <div className="container mx-auto px-4">
-        <h1 className="text-5xl font-bold mb-6 text-hive-blue-900">Ditch the Grind: Hire Your Own Team of AI Worker Bees So You Can Collect The Honey!</h1>
+        <h1 className="text-5xl font-bold mb-6 text-hive-blue-900">Your AI Hive Does The Grunt Work While You Do What You Love.</h1>
         <p className="text-xl mb-8 text-hive-blue-700 max-w-2xl mx-auto">
           Harness the power of artificial intelligence to streamline your agency's workflow, boost productivity, and deliver exceptional results.
         </p>
