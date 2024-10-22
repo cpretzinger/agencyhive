@@ -65,7 +65,7 @@ const Testimonials = () => {
         <div className="max-w-3xl mx-auto mb-16">
           <iframe
             src="https://link.agencybrain.ai/widget/form/0G5xiEKRqityRl0uZmsX"
-            style={{width:'100%', height:'500px', border:'none', borderRadius:'4px'}}
+            style={{width:'100%', height:'764px', border:'none', borderRadius:'4px'}}
             id="inline-0G5xiEKRqityRl0uZmsX" 
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
@@ -75,7 +75,7 @@ const Testimonials = () => {
             data-deactivation-type="neverDeactivate"
             data-deactivation-value=""
             data-form-name="Waitlist"
-            data-height="500"
+            data-height="764"
             data-layout-iframe-id="inline-0G5xiEKRqityRl0uZmsX"
             data-form-id="0G5xiEKRqityRl0uZmsX"
             title="Waitlist"
