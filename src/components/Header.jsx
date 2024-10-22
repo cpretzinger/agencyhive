@@ -21,7 +21,6 @@ const Header = () => {
           <ul className="flex space-x-6">
             <li><a href="#features" className="text-white hover:text-hive-yellow-300">Features</a></li>
             <li><a href="#testimonials" className="text-white hover:text-hive-yellow-300">Testimonials</a></li>
-            <li><Button variant="ghost" className="text-white hover:text-hive-yellow-300 hover:bg-hive-blue-600">Sign In</Button></li>
             <li><Button className="bg-hive-yellow-500 text-hive-blue-900 hover:bg-hive-yellow-400" onClick={scrollToForm}>Start Free Trial</Button></li>
           </ul>
         </nav>
